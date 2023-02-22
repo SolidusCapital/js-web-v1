@@ -108,6 +108,7 @@ function registerModal({
         .getAttribute("aria-selected");
       var entity_type = isIndividual === "true" ? "Persona" : "Empresa";
       id_user = Math.random().toString(36).slice(2, 6);
+      console.log('Id generated');
       const params = new URLSearchParams({
         entity_type: entity_type,
         id_user: id_user,
